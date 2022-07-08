@@ -41,7 +41,7 @@ execute pkg install git golang
 cd ~
 
 execute rm -rf ~/go/src/github.com/Psiphon-Labs/psiphon-tunnel-core ~/psiphon-tunnel-core
-execute go get -u github.com/Psiphon-Labs/psiphon-tunnel-core
+execute go install github.com/Psiphon-Labs/psiphon-tunnel-core@latest
 execute cd ~/go/src/github.com/Psiphon-Labs/psiphon-tunnel-core/ConsoleClient
 execute go build -ldflags="-s -w" -o ~/psiphon-tunnel-core
 
